@@ -1,0 +1,33 @@
+{
+  "name": "old-life",
+  "version": "1.0.0",
+  "description": "Why Your Brain Keeps Pulling You Back to Your Old Life: narrated cinematic 3D reel (Remotion + Three.js)",
+  "scripts": {
+    "studio": "remotion studio",
+    "audio": "esbuild scripts/generate-ambient.ts --bundle --platform=node --format=esm --jsx=automatic --log-level=error --outfile=out/generate-ambient.mjs && node out/generate-ambient.mjs",
+    "render": "remotion render OldLife out/old-life.mp4",
+    "render:cpu": "remotion render OldLife out/old-life.mp4 --gl=swangle",
+    "still": "remotion still OldLife out/still.png --frame=900",
+    "typecheck": "tsc",
+    "captions": "esbuild scripts/export-captions.ts --bundle --platform=node --format=esm --log-level=error --outfile=out/export-captions.mjs && node out/export-captions.mjs",
+    "voiceover": "python3 scripts/generate_voiceover.py --model tts/kokoro-q8.onnx --voices tts/voices"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "5.1.0",
+    "@fontsource/inter": "5.1.0",
+    "@react-three/fiber": "8.18.0",
+    "@react-three/postprocessing": "2.16.6",
+    "@remotion/cli": "4.0.539",
+    "@remotion/three": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539",
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/three": "0.170.0",
+    "typescript": "5.6.3"
+  },
+  "private": true
+}

@@ -1,0 +1,929 @@
+{
+  "l01": {
+    "text": "Have you noticed how changing your life can feel easier when you're somewhere new?",
+    "file": "voiceover/l01.wav",
+    "duration": 3.691,
+    "words": [
+      {
+        "word": "Have",
+        "start": 0.0,
+        "end": 0.15
+      },
+      {
+        "word": "you",
+        "start": 0.15,
+        "end": 0.26
+      },
+      {
+        "word": "noticed",
+        "start": 0.26,
+        "end": 0.63
+      },
+      {
+        "word": "how",
+        "start": 0.63,
+        "end": 0.83
+      },
+      {
+        "word": "changing",
+        "start": 0.83,
+        "end": 1.29
+      },
+      {
+        "word": "your",
+        "start": 1.29,
+        "end": 1.4
+      },
+      {
+        "word": "life",
+        "start": 1.4,
+        "end": 1.76
+      },
+      {
+        "word": "can",
+        "start": 1.76,
+        "end": 1.96
+      },
+      {
+        "word": "feel",
+        "start": 1.96,
+        "end": 2.23
+      },
+      {
+        "word": "easier",
+        "start": 2.23,
+        "end": 2.9
+      },
+      {
+        "word": "when",
+        "start": 2.9,
+        "end": 2.99
+      },
+      {
+        "word": "you're",
+        "start": 2.99,
+        "end": 3.08
+      },
+      {
+        "word": "somewhere",
+        "start": 3.08,
+        "end": 3.35
+      },
+      {
+        "word": "new?",
+        "start": 3.35,
+        "end": 3.69
+      }
+    ]
+  },
+  "l02": {
+    "text": "On vacation, you wake up differently. You think differently. Sometimes, you even behave differently.",
+    "file": "voiceover/l02.wav",
+    "duration": 5.717,
+    "words": [
+      {
+        "word": "On",
+        "start": 0.0,
+        "end": 0.15
+      },
+      {
+        "word": "vacation,",
+        "start": 0.15,
+        "end": 0.94
+      },
+      {
+        "word": "you",
+        "start": 0.94,
+        "end": 1.07
+      },
+      {
+        "word": "wake",
+        "start": 1.07,
+        "end": 1.27
+      },
+      {
+        "word": "up",
+        "start": 1.27,
+        "end": 1.43
+      },
+      {
+        "word": "differently.",
+        "start": 1.43,
+        "end": 1.98
+      },
+      {
+        "word": "You",
+        "start": 2.33,
+        "end": 2.42
+      },
+      {
+        "word": "think",
+        "start": 2.42,
+        "end": 2.67
+      },
+      {
+        "word": "differently.",
+        "start": 2.67,
+        "end": 3.25
+      },
+      {
+        "word": "Sometimes,",
+        "start": 3.58,
+        "end": 4.32
+      },
+      {
+        "word": "you",
+        "start": 4.32,
+        "end": 4.47
+      },
+      {
+        "word": "even",
+        "start": 4.47,
+        "end": 4.71
+      },
+      {
+        "word": "behave",
+        "start": 4.71,
+        "end": 5.13
+      },
+      {
+        "word": "differently.",
+        "start": 5.13,
+        "end": 5.72
+      }
+    ]
+  },
+  "l03": {
+    "text": "Then you return home... and somehow, the old version of you returns too.",
+    "file": "voiceover/l03.wav",
+    "duration": 3.925,
+    "words": [
+      {
+        "word": "Then",
+        "start": 0.0,
+        "end": 0.13
+      },
+      {
+        "word": "you",
+        "start": 0.13,
+        "end": 0.24
+      },
+      {
+        "word": "return",
+        "start": 0.24,
+        "end": 0.56
+      },
+      {
+        "word": "home...",
+        "start": 0.56,
+        "end": 0.94
+      },
+      {
+        "word": "and",
+        "start": 1.29,
+        "end": 1.42
+      },
+      {
+        "word": "somehow,",
+        "start": 1.42,
+        "end": 2.06
+      },
+      {
+        "word": "the",
+        "start": 2.06,
+        "end": 2.2
+      },
+      {
+        "word": "old",
+        "start": 2.2,
+        "end": 2.45
+      },
+      {
+        "word": "version",
+        "start": 2.45,
+        "end": 2.83
+      },
+      {
+        "word": "of",
+        "start": 2.83,
+        "end": 2.92
+      },
+      {
+        "word": "you",
+        "start": 2.92,
+        "end": 3.04
+      },
+      {
+        "word": "returns",
+        "start": 3.04,
+        "end": 3.51
+      },
+      {
+        "word": "too.",
+        "start": 3.51,
+        "end": 3.92
+      }
+    ]
+  },
+  "l04": {
+    "text": "Here's why that's fascinating.",
+    "file": "voiceover/l04.wav",
+    "duration": 1.579,
+    "words": [
+      {
+        "word": "Here's",
+        "start": 0.0,
+        "end": 0.34
+      },
+      {
+        "word": "why",
+        "start": 0.34,
+        "end": 0.55
+      },
+      {
+        "word": "that's",
+        "start": 0.55,
+        "end": 0.84
+      },
+      {
+        "word": "fascinating.",
+        "start": 0.84,
+        "end": 1.58
+      }
+    ]
+  },
+  "l05": {
+    "text": "Your habits aren't stored in willpower alone.",
+    "file": "voiceover/l05.wav",
+    "duration": 2.197,
+    "words": [
+      {
+        "word": "Your",
+        "start": 0.0,
+        "end": 0.13
+      },
+      {
+        "word": "habits",
+        "start": 0.13,
+        "end": 0.54
+      },
+      {
+        "word": "aren't",
+        "start": 0.54,
+        "end": 0.73
+      },
+      {
+        "word": "stored",
+        "start": 0.73,
+        "end": 1.05
+      },
+      {
+        "word": "in",
+        "start": 1.05,
+        "end": 1.19
+      },
+      {
+        "word": "willpower",
+        "start": 1.19,
+        "end": 1.66
+      },
+      {
+        "word": "alone.",
+        "start": 1.66,
+        "end": 2.2
+      }
+    ]
+  },
+  "l06": {
+    "text": "They're strongly connected to your environment.",
+    "file": "voiceover/l06.wav",
+    "duration": 2.304,
+    "words": [
+      {
+        "word": "They're",
+        "start": 0.0,
+        "end": 0.15
+      },
+      {
+        "word": "strongly",
+        "start": 0.15,
+        "end": 0.67
+      },
+      {
+        "word": "connected",
+        "start": 0.67,
+        "end": 1.35
+      },
+      {
+        "word": "to",
+        "start": 1.35,
+        "end": 1.46
+      },
+      {
+        "word": "your",
+        "start": 1.46,
+        "end": 1.57
+      },
+      {
+        "word": "environment.",
+        "start": 1.57,
+        "end": 2.3
+      }
+    ]
+  },
+  "l07": {
+    "text": "The same room. The same time. The same cues.",
+    "file": "voiceover/l07.wav",
+    "duration": 2.795,
+    "words": [
+      {
+        "word": "The",
+        "start": 0.0,
+        "end": 0.06
+      },
+      {
+        "word": "same",
+        "start": 0.06,
+        "end": 0.42
+      },
+      {
+        "word": "room.",
+        "start": 0.42,
+        "end": 0.77
+      },
+      {
+        "word": "The",
+        "start": 0.98,
+        "end": 1.07
+      },
+      {
+        "word": "same",
+        "start": 1.07,
+        "end": 1.38
+      },
+      {
+        "word": "time.",
+        "start": 1.38,
+        "end": 1.82
+      },
+      {
+        "word": "The",
+        "start": 1.82,
+        "end": 1.94
+      },
+      {
+        "word": "same",
+        "start": 1.94,
+        "end": 2.27
+      },
+      {
+        "word": "cues.",
+        "start": 2.27,
+        "end": 2.79
+      }
+    ]
+  },
+  "l08": {
+    "text": "Over time, familiar surroundings can trigger familiar behaviors before you've consciously decided what to do.",
+    "file": "voiceover/l08.wav",
+    "duration": 6.528,
+    "words": [
+      {
+        "word": "Over",
+        "start": 0.0,
+        "end": 0.23
+      },
+      {
+        "word": "time,",
+        "start": 0.23,
+        "end": 0.66
+      },
+      {
+        "word": "familiar",
+        "start": 0.97,
+        "end": 1.39
+      },
+      {
+        "word": "surroundings",
+        "start": 1.39,
+        "end": 2.09
+      },
+      {
+        "word": "can",
+        "start": 2.09,
+        "end": 2.27
+      },
+      {
+        "word": "trigger",
+        "start": 2.27,
+        "end": 2.59
+      },
+      {
+        "word": "familiar",
+        "start": 2.59,
+        "end": 3.12
+      },
+      {
+        "word": "behaviors",
+        "start": 3.12,
+        "end": 3.83
+      },
+      {
+        "word": "before",
+        "start": 4.13,
+        "end": 4.37
+      },
+      {
+        "word": "you've",
+        "start": 4.37,
+        "end": 4.66
+      },
+      {
+        "word": "consciously",
+        "start": 4.66,
+        "end": 5.33
+      },
+      {
+        "word": "decided",
+        "start": 5.33,
+        "end": 5.87
+      },
+      {
+        "word": "what",
+        "start": 5.87,
+        "end": 6.05
+      },
+      {
+        "word": "to",
+        "start": 6.05,
+        "end": 6.17
+      },
+      {
+        "word": "do.",
+        "start": 6.17,
+        "end": 6.53
+      }
+    ]
+  },
+  "l09": {
+    "text": "Psychologists study something called the habit discontinuity effect.",
+    "file": "voiceover/l09.wav",
+    "duration": 3.776,
+    "words": [
+      {
+        "word": "Psychologists",
+        "start": 0.0,
+        "end": 0.96
+      },
+      {
+        "word": "study",
+        "start": 0.96,
+        "end": 1.23
+      },
+      {
+        "word": "something",
+        "start": 1.23,
+        "end": 1.68
+      },
+      {
+        "word": "called",
+        "start": 1.68,
+        "end": 1.99
+      },
+      {
+        "word": "the",
+        "start": 1.99,
+        "end": 2.05
+      },
+      {
+        "word": "habit",
+        "start": 2.05,
+        "end": 2.48
+      },
+      {
+        "word": "discontinuity",
+        "start": 2.48,
+        "end": 3.28
+      },
+      {
+        "word": "effect.",
+        "start": 3.28,
+        "end": 3.78
+      }
+    ]
+  },
+  "l10": {
+    "text": "When your environment changes, old cues can lose some of their power.",
+    "file": "voiceover/l10.wav",
+    "duration": 3.733,
+    "words": [
+      {
+        "word": "When",
+        "start": 0.0,
+        "end": 0.11
+      },
+      {
+        "word": "your",
+        "start": 0.11,
+        "end": 0.23
+      },
+      {
+        "word": "environment",
+        "start": 0.23,
+        "end": 0.8
+      },
+      {
+        "word": "changes,",
+        "start": 0.8,
+        "end": 1.48
+      },
+      {
+        "word": "old",
+        "start": 1.8,
+        "end": 2.01
+      },
+      {
+        "word": "cues",
+        "start": 2.01,
+        "end": 2.41
+      },
+      {
+        "word": "can",
+        "start": 2.41,
+        "end": 2.61
+      },
+      {
+        "word": "lose",
+        "start": 2.61,
+        "end": 2.87
+      },
+      {
+        "word": "some",
+        "start": 2.87,
+        "end": 3.01
+      },
+      {
+        "word": "of",
+        "start": 3.01,
+        "end": 3.09
+      },
+      {
+        "word": "their",
+        "start": 3.09,
+        "end": 3.22
+      },
+      {
+        "word": "power.",
+        "start": 3.22,
+        "end": 3.73
+      }
+    ]
+  },
+  "l11": {
+    "text": "And that creates an opportunity to establish new routines.",
+    "file": "voiceover/l11.wav",
+    "duration": 3.221,
+    "words": [
+      {
+        "word": "And",
+        "start": 0.0,
+        "end": 0.14
+      },
+      {
+        "word": "that",
+        "start": 0.14,
+        "end": 0.31
+      },
+      {
+        "word": "creates",
+        "start": 0.31,
+        "end": 0.72
+      },
+      {
+        "word": "an",
+        "start": 0.72,
+        "end": 0.78
+      },
+      {
+        "word": "opportunity",
+        "start": 0.78,
+        "end": 1.54
+      },
+      {
+        "word": "to",
+        "start": 1.54,
+        "end": 1.69
+      },
+      {
+        "word": "establish",
+        "start": 1.69,
+        "end": 2.28
+      },
+      {
+        "word": "new",
+        "start": 2.28,
+        "end": 2.48
+      },
+      {
+        "word": "routines.",
+        "start": 2.48,
+        "end": 3.22
+      }
+    ]
+  },
+  "l12": {
+    "text": "So here's something to try.",
+    "file": "voiceover/l12.wav",
+    "duration": 1.451,
+    "words": [
+      {
+        "word": "So",
+        "start": 0.0,
+        "end": 0.21
+      },
+      {
+        "word": "here's",
+        "start": 0.21,
+        "end": 0.49
+      },
+      {
+        "word": "something",
+        "start": 0.49,
+        "end": 0.83
+      },
+      {
+        "word": "to",
+        "start": 0.83,
+        "end": 0.92
+      },
+      {
+        "word": "try.",
+        "start": 0.92,
+        "end": 1.45
+      }
+    ]
+  },
+  "l13": {
+    "text": "Choose one habit you've struggled to change.",
+    "file": "voiceover/l13.wav",
+    "duration": 2.176,
+    "words": [
+      {
+        "word": "Choose",
+        "start": 0.0,
+        "end": 0.32
+      },
+      {
+        "word": "one",
+        "start": 0.32,
+        "end": 0.51
+      },
+      {
+        "word": "habit",
+        "start": 0.51,
+        "end": 0.91
+      },
+      {
+        "word": "you've",
+        "start": 0.91,
+        "end": 1.05
+      },
+      {
+        "word": "struggled",
+        "start": 1.05,
+        "end": 1.46
+      },
+      {
+        "word": "to",
+        "start": 1.46,
+        "end": 1.55
+      },
+      {
+        "word": "change.",
+        "start": 1.55,
+        "end": 2.07
+      }
+    ]
+  },
+  "l14": {
+    "text": "Instead of promising yourself more discipline, change one cue that triggers it.",
+    "file": "voiceover/l14.wav",
+    "duration": 4.181,
+    "words": [
+      {
+        "word": "Instead",
+        "start": 0.0,
+        "end": 0.34
+      },
+      {
+        "word": "of",
+        "start": 0.34,
+        "end": 0.42
+      },
+      {
+        "word": "promising",
+        "start": 0.42,
+        "end": 0.89
+      },
+      {
+        "word": "yourself",
+        "start": 0.89,
+        "end": 1.31
+      },
+      {
+        "word": "more",
+        "start": 1.31,
+        "end": 1.52
+      },
+      {
+        "word": "discipline,",
+        "start": 1.52,
+        "end": 2.16
+      },
+      {
+        "word": "change",
+        "start": 2.46,
+        "end": 2.82
+      },
+      {
+        "word": "one",
+        "start": 2.82,
+        "end": 3.08
+      },
+      {
+        "word": "cue",
+        "start": 3.08,
+        "end": 3.36
+      },
+      {
+        "word": "that",
+        "start": 3.36,
+        "end": 3.52
+      },
+      {
+        "word": "triggers",
+        "start": 3.52,
+        "end": 3.91
+      },
+      {
+        "word": "it.",
+        "start": 3.91,
+        "end": 4.18
+      }
+    ]
+  },
+  "l15": {
+    "text": "Move your phone away from your bed. Change where you work. Rearrange your morning routine.",
+    "file": "voiceover/l15.wav",
+    "duration": 4.779,
+    "words": [
+      {
+        "word": "Move",
+        "start": 0.0,
+        "end": 0.29
+      },
+      {
+        "word": "your",
+        "start": 0.29,
+        "end": 0.38
+      },
+      {
+        "word": "phone",
+        "start": 0.38,
+        "end": 0.69
+      },
+      {
+        "word": "away",
+        "start": 0.69,
+        "end": 0.96
+      },
+      {
+        "word": "from",
+        "start": 0.96,
+        "end": 1.13
+      },
+      {
+        "word": "your",
+        "start": 1.13,
+        "end": 1.24
+      },
+      {
+        "word": "bed.",
+        "start": 1.24,
+        "end": 1.59
+      },
+      {
+        "word": "Change",
+        "start": 1.92,
+        "end": 2.27
+      },
+      {
+        "word": "where",
+        "start": 2.27,
+        "end": 2.37
+      },
+      {
+        "word": "you",
+        "start": 2.37,
+        "end": 2.51
+      },
+      {
+        "word": "work.",
+        "start": 2.51,
+        "end": 2.88
+      },
+      {
+        "word": "Rearrange",
+        "start": 3.14,
+        "end": 3.68
+      },
+      {
+        "word": "your",
+        "start": 3.68,
+        "end": 3.78
+      },
+      {
+        "word": "morning",
+        "start": 3.78,
+        "end": 4.11
+      },
+      {
+        "word": "routine.",
+        "start": 4.11,
+        "end": 4.78
+      }
+    ]
+  },
+  "l16": {
+    "text": "Sometimes, becoming someone new starts with making your old routine harder to repeat.",
+    "file": "voiceover/l16.wav",
+    "duration": 4.843,
+    "words": [
+      {
+        "word": "Sometimes,",
+        "start": 0.0,
+        "end": 0.72
+      },
+      {
+        "word": "becoming",
+        "start": 0.96,
+        "end": 1.39
+      },
+      {
+        "word": "someone",
+        "start": 1.39,
+        "end": 1.71
+      },
+      {
+        "word": "new",
+        "start": 1.71,
+        "end": 1.9
+      },
+      {
+        "word": "starts",
+        "start": 1.9,
+        "end": 2.39
+      },
+      {
+        "word": "with",
+        "start": 2.39,
+        "end": 2.55
+      },
+      {
+        "word": "making",
+        "start": 2.55,
+        "end": 2.85
+      },
+      {
+        "word": "your",
+        "start": 2.85,
+        "end": 3.04
+      },
+      {
+        "word": "old",
+        "start": 3.04,
+        "end": 3.35
+      },
+      {
+        "word": "routine",
+        "start": 3.35,
+        "end": 3.82
+      },
+      {
+        "word": "harder",
+        "start": 3.82,
+        "end": 4.2
+      },
+      {
+        "word": "to",
+        "start": 4.2,
+        "end": 4.31
+      },
+      {
+        "word": "repeat.",
+        "start": 4.31,
+        "end": 4.84
+      }
+    ]
+  }
+}
