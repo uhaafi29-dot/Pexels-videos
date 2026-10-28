@@ -32,9 +32,9 @@ export type VoKey = keyof typeof VOICEOVER;
 export const NARRATION: {key: VoKey; at: number; holdUntil: number}[] = [
   {key: 's1', at: 0.4, holdUntil: 5.4},
   {key: 's2', at: 5.75, holdUntil: 12.0},
-  {key: 's3', at: 12.35, holdUntil: 18.6},
-  {key: 's4', at: 21.4, holdUntil: 26.8},
-  {key: 's5', at: 29.5, holdUntil: 36.6},
+  {key: 's3', at: 12.9, holdUntil: 19.3},
+  {key: 's4', at: 21.9, holdUntil: 27.5},
+  {key: 's5', at: 29.3, holdUntil: 36.6},
 ];
 
 export type TimedWord = {word: string; from: number; to: number};

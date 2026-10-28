@@ -64,8 +64,18 @@ export const cameraAt = (frame: number): Shot => {
   const detectors: Shot = {pos: V(1.45, 1.75, -4.1), target: V(0, 0.15, -1.6), fov: 40};
   shot = mix(shot, detectors, w(f, SCENES.measure.from - 8, s(22.4)));
   // …then out front to watch run B build up, the earlier result beside it.
+  // (an arc round the side, so the camera never passes through the apparatus)
   const front: Shot = {pos: V(-0.2, 0.75, 12.8), target: V(-0.2, 0.55, SCREEN_Z), fov: 36};
-  shot = mix(shot, front, w(f, s(23.9), s(25.9)));
+  const t = w(f, s(23.9), s(25.9));
+  if (t > 0) {
+    const a = shot.pos;
+    const c = V(7.5, 2.2, 5.0);
+    shot = {
+      pos: a.clone().multiplyScalar((1 - t) ** 2).add(c.multiplyScalar(2 * (1 - t) * t)).add(front.pos.clone().multiplyScalar(t * t)),
+      target: shot.target.clone().lerp(front.target, t),
+      fov: shot.fov + (front.fov - shot.fov) * t,
+    };
+  }
 
   // 5 – a slow cinematic pull-back until both results sit side by side.
   const both: Shot = {pos: V(-1.95, 0.75, 21.0), target: V(-1.725, 0.6, SCREEN_Z), fov: 36};

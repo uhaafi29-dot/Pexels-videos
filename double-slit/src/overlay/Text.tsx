@@ -198,7 +198,7 @@ const Counter: React.FC = () => {
   const o = Math.max(runA, runB);
   if (o <= 0) return null;
   return (
-    <div style={{position: 'absolute', top: SAFE_TOP + 205, width: '100%', textAlign: 'center', opacity: o}}>
+    <div style={{position: 'absolute', top: SAFE_TOP + 240, width: '100%', textAlign: 'center', opacity: o}}>
       <span style={{fontSize: 26, fontWeight: 600, letterSpacing: '0.2em', color: 'rgba(190,220,255,0.85)'}}>ELECTRONS DETECTED&nbsp;&nbsp;</span>
       <span style={{fontSize: 40, fontWeight: 800, color: ACCENT, fontVariantNumeric: 'tabular-nums'}}>{value.toLocaleString('en-US')}</span>
     </div>

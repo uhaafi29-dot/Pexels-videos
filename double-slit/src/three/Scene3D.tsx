@@ -2,7 +2,7 @@ import {useThree} from '@react-three/fiber';
 import {useLayoutEffect, useMemo} from 'react';
 import {Easing, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
 import * as THREE from 'three';
-import {BARRIER_Z, applyLens, cameraAt, screenAX} from '../camera';
+import {BARRIER_Z, SCREEN_Z, applyLens, cameraAt, screenAX} from '../camera';
 import {ENVELOPE, FRINGE, pInterference, pNoInterference, sampleHits} from '../physics';
 import {DETECTORS_ON, DURATION_IN_FRAMES, FIRST_SHOT, FPS, RUN_B, SCENES, TOTAL_A, TOTAL_B, birthFrames, countA, countB, s} from '../timeline';
 import {Backdrop, Dust, Grade, LightShafts} from './Atmosphere';
@@ -81,7 +81,11 @@ export const Scene3D: React.FC = () => {
   // --- glowing "events": the first electron shown in flight (as a metaphor) ----------------
   const lights: GlowPoint[] = [];
   const flicker = Math.max(activityA * (frame < RUN_B.from ? 1 : 0), activityB);
-  lights.push({pos: NOZZLE, size: 0.32 + flicker * 0.25, color: [...CYAN], intensity: 0.7 + flicker * 1.2});
+  // The source glow is drawn without depth testing, so hide it whenever the
+  // camera is in front of the detector screen (it would shine through the
+  // screen and look like a permanent hit in the middle).
+  const sourceVisible = interpolate(shot.pos.z, [SCREEN_Z - 0.5, SCREEN_Z + 0.5], [1, 0], clamp);
+  lights.push({pos: NOZZLE, size: 0.32 + flicker * 0.25, color: [...CYAN], intensity: (0.7 + flicker * 1.2) * sourceVisible});
   const flight = interpolate(frame, [FIRST_SHOT.fire, FIRST_SHOT.fire + 30], [0, 1], clamp);
   if (frame >= FIRST_SHOT.fire && flight < 1) {
     // a packet leaves the source and approaches the barrier…
