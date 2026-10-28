@@ -1,0 +1,310 @@
+{
+  "hook": {
+    "text": "Why is it so hard to change a habit, even one you want to change?",
+    "file": "voiceover/hook.wav",
+    "duration": 3.691,
+    "words": [
+      {
+        "word": "Why",
+        "start": 0.0,
+        "end": 0.27
+      },
+      {
+        "word": "is",
+        "start": 0.27,
+        "end": 0.46
+      },
+      {
+        "word": "it",
+        "start": 0.46,
+        "end": 0.57
+      },
+      {
+        "word": "so",
+        "start": 0.57,
+        "end": 0.85
+      },
+      {
+        "word": "hard",
+        "start": 0.85,
+        "end": 1.15
+      },
+      {
+        "word": "to",
+        "start": 1.15,
+        "end": 1.23
+      },
+      {
+        "word": "change",
+        "start": 1.23,
+        "end": 1.51
+      },
+      {
+        "word": "a",
+        "start": 1.51,
+        "end": 1.54
+      },
+      {
+        "word": "habit,",
+        "start": 1.54,
+        "end": 1.98
+      },
+      {
+        "word": "even",
+        "start": 2.28,
+        "end": 2.58
+      },
+      {
+        "word": "one",
+        "start": 2.58,
+        "end": 2.73
+      },
+      {
+        "word": "you",
+        "start": 2.73,
+        "end": 2.85
+      },
+      {
+        "word": "want",
+        "start": 2.85,
+        "end": 3.04
+      },
+      {
+        "word": "to",
+        "start": 3.04,
+        "end": 3.1
+      },
+      {
+        "word": "change?",
+        "start": 3.1,
+        "end": 3.69
+      }
+    ]
+  },
+  "familiar": {
+    "text": "Each time we repeat a behavior, it can feel a little easier, until it's almost automatic.",
+    "file": "voiceover/familiar.wav",
+    "duration": 5.205,
+    "words": [
+      {
+        "word": "Each",
+        "start": 0.0,
+        "end": 0.28
+      },
+      {
+        "word": "time",
+        "start": 0.28,
+        "end": 0.55
+      },
+      {
+        "word": "we",
+        "start": 0.55,
+        "end": 0.67
+      },
+      {
+        "word": "repeat",
+        "start": 0.67,
+        "end": 1.01
+      },
+      {
+        "word": "a",
+        "start": 1.01,
+        "end": 1.06
+      },
+      {
+        "word": "behavior,",
+        "start": 1.06,
+        "end": 1.69
+      },
+      {
+        "word": "it",
+        "start": 1.98,
+        "end": 2.1
+      },
+      {
+        "word": "can",
+        "start": 2.1,
+        "end": 2.25
+      },
+      {
+        "word": "feel",
+        "start": 2.25,
+        "end": 2.54
+      },
+      {
+        "word": "a",
+        "start": 2.54,
+        "end": 2.57
+      },
+      {
+        "word": "little",
+        "start": 2.57,
+        "end": 2.83
+      },
+      {
+        "word": "easier,",
+        "start": 2.83,
+        "end": 3.4
+      },
+      {
+        "word": "until",
+        "start": 3.66,
+        "end": 3.94
+      },
+      {
+        "word": "it's",
+        "start": 3.94,
+        "end": 4.05
+      },
+      {
+        "word": "almost",
+        "start": 4.05,
+        "end": 4.45
+      },
+      {
+        "word": "automatic.",
+        "start": 4.45,
+        "end": 5.2
+      }
+    ]
+  },
+  "newRoute": {
+    "text": "A new behavior takes a different route. At first, it needs more attention, and effort.",
+    "file": "voiceover/newRoute.wav",
+    "duration": 4.949,
+    "words": [
+      {
+        "word": "A",
+        "start": 0.0,
+        "end": 0.07
+      },
+      {
+        "word": "new",
+        "start": 0.07,
+        "end": 0.26
+      },
+      {
+        "word": "behavior",
+        "start": 0.26,
+        "end": 0.77
+      },
+      {
+        "word": "takes",
+        "start": 0.77,
+        "end": 1.05
+      },
+      {
+        "word": "a",
+        "start": 1.05,
+        "end": 1.08
+      },
+      {
+        "word": "different",
+        "start": 1.08,
+        "end": 1.41
+      },
+      {
+        "word": "route.",
+        "start": 1.41,
+        "end": 1.83
+      },
+      {
+        "word": "At",
+        "start": 2.27,
+        "end": 2.42
+      },
+      {
+        "word": "first,",
+        "start": 2.42,
+        "end": 3.05
+      },
+      {
+        "word": "it",
+        "start": 3.05,
+        "end": 3.17
+      },
+      {
+        "word": "needs",
+        "start": 3.17,
+        "end": 3.4
+      },
+      {
+        "word": "more",
+        "start": 3.4,
+        "end": 3.61
+      },
+      {
+        "word": "attention,",
+        "start": 3.61,
+        "end": 4.23
+      },
+      {
+        "word": "and",
+        "start": 4.23,
+        "end": 4.41
+      },
+      {
+        "word": "effort.",
+        "start": 4.41,
+        "end": 4.95
+      }
+    ]
+  },
+  "practice": {
+    "text": "But with practice, that new route can become familiar too.",
+    "file": "voiceover/practice.wav",
+    "duration": 3.179,
+    "words": [
+      {
+        "word": "But",
+        "start": 0.0,
+        "end": 0.11
+      },
+      {
+        "word": "with",
+        "start": 0.11,
+        "end": 0.26
+      },
+      {
+        "word": "practice,",
+        "start": 0.26,
+        "end": 0.93
+      },
+      {
+        "word": "that",
+        "start": 0.93,
+        "end": 1.33
+      },
+      {
+        "word": "new",
+        "start": 1.33,
+        "end": 1.53
+      },
+      {
+        "word": "route",
+        "start": 1.53,
+        "end": 1.82
+      },
+      {
+        "word": "can",
+        "start": 1.82,
+        "end": 1.97
+      },
+      {
+        "word": "become",
+        "start": 1.97,
+        "end": 2.28
+      },
+      {
+        "word": "familiar",
+        "start": 2.28,
+        "end": 2.75
+      },
+      {
+        "word": "too.",
+        "start": 2.75,
+        "end": 3.18
+      }
+    ]
+  }
+}
