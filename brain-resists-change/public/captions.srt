@@ -1,15 +1,19 @@
 1
-00:00:00,500 --> 00:00:03,850
+00:00:00,800 --> 00:00:03,867
 Why does change feel so difficult?
 
 2
-00:00:04,300 --> 00:00:08,800
-Repeated behaviors can become easier and more automatic.
+00:00:04,200 --> 00:00:08,900
+Every time we repeat a behavior, it can become easier, and more automatic.
 
 3
-00:00:09,300 --> 00:00:14,800
-New behaviors often require more attention and practice.
+00:00:09,200 --> 00:00:14,867
+New behaviors take a different route. They often require more attention, and practice.
 
 4
-00:00:15,400 --> 00:00:19,600
+00:00:15,250 --> 00:00:16,467
+The good news?
+
+5
+00:00:16,550 --> 00:00:19,700
 Repetition helps new habits become familiar.

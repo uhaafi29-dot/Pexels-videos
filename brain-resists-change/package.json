@@ -8,7 +8,9 @@
     "render": "remotion render BrainResistsChange out/brain-resists-change.mp4",
     "render:cpu": "remotion render BrainResistsChange out/brain-resists-change.mp4 --gl=swangle",
     "still": "remotion still BrainResistsChange out/still.png --frame=300",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "captions": "node --experimental-strip-types scripts/export-captions.mts",
+    "voiceover": "python3 scripts/generate_voiceover.py --model tts/kokoro-q8.onnx --voices tts/voices"
   },
   "dependencies": {
     "@fontsource/inter": "5.1.0",

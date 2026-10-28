@@ -3,26 +3,38 @@ import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import {ThreeCanvas} from '@remotion/three';
 import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useVideoConfig} from 'remotion';
-import {DURATION_IN_FRAMES, SCENES} from './timeline';
+import {CAPTIONS, DURATION_IN_FRAMES, FPS} from './timeline';
 import {Overlay} from './overlay/Text';
 import {FOV, Scene3D} from './three/Scene3D';
 
 export type VideoProps = {
-  /** Ambient bed in /public. Regenerate with `npm run audio`. */
-  ambient: string | null;
-  /**
-   * Voiceover placeholders: drop recorded lines into public/voiceover/ and
-   * set the file names here (or via --props). null = no voiceover yet.
-   */
-  voiceover: Record<keyof typeof SCENES, string | null>;
+  /** Original ambient music bed in /public (regenerate with `npm run audio`). */
+  ambient: string;
+  /** Music level while the narrator speaks / between lines. */
+  musicUnderVoice: number;
+  musicAlone: number;
 };
 
 export const defaultProps: VideoProps = {
   ambient: 'ambient.wav',
-  voiceover: {intro: null, familiar: null, newRoute: null, repetition: null},
+  musicUnderVoice: 0.22,
+  musicAlone: 0.45,
 };
 
-export const BrainResistsChange: React.FC<VideoProps> = ({ambient, voiceover}) => {
+const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
+
+/** Music level per frame: ducked smoothly under each narration line. */
+const musicVolume = (f: number, under: number, alone: number) => {
+  let duck = 0;
+  for (const c of CAPTIONS) {
+    const end = c.from + c.audioDuration * FPS;
+    duck = Math.max(duck, interpolate(f, [c.from - 8, c.from, end, end + 12], [0, 1, 1, 0], clamp));
+  }
+  const fade = interpolate(f, [0, 20, DURATION_IN_FRAMES - 25, DURATION_IN_FRAMES], [0, 1, 1, 0], clamp);
+  return (alone + (under - alone) * duck) * fade;
+};
+
+export const BrainResistsChange: React.FC<VideoProps> = ({ambient, musicUnderVoice, musicAlone}) => {
   const {width, height} = useVideoConfig();
   return (
     <AbsoluteFill style={{backgroundColor: '#010205'}}>
@@ -39,19 +51,12 @@ export const BrainResistsChange: React.FC<VideoProps> = ({ambient, voiceover}) =
       </ThreeCanvas>
       <Overlay />
 
-      {ambient ? (
-        <Audio
-          src={staticFile(ambient)}
-          volume={(f) => interpolate(f, [0, 20, DURATION_IN_FRAMES - 25, DURATION_IN_FRAMES], [0, 0.9, 0.9, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}
-        />
-      ) : null}
-      {(Object.keys(SCENES) as (keyof typeof SCENES)[]).map((scene) =>
-        voiceover[scene] ? (
-          <Sequence key={scene} from={SCENES[scene].from + 6}>
-            <Audio src={staticFile(`voiceover/${voiceover[scene]}`)} />
-          </Sequence>
-        ) : null,
-      )}
+      <Audio src={staticFile(ambient)} volume={(f) => musicVolume(f, musicUnderVoice, musicAlone)} />
+      {CAPTIONS.map((c) => (
+        <Sequence key={c.key} from={c.from} name={`VO: ${c.key}`}>
+          <Audio src={staticFile(c.file)} volume={1} />
+        </Sequence>
+      ))}
     </AbsoluteFill>
   );
 };

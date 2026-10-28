@@ -7,35 +7,40 @@ const rgb = (c: [number, number, number]) => `rgb(${c.map((v) => Math.round(v * 
 
 const FONT = "'Inter', 'Helvetica Neue', Arial, sans-serif";
 
-/** Words drift up out of a soft blur, one after another, and exit together. */
-const RevealWords: React.FC<{text: string; from: number; to: number; stagger: number; style: React.CSSProperties}> = ({
-  text,
-  from,
-  to,
-  stagger,
-  style,
-}) => {
+type Caption = (typeof CAPTIONS)[number];
+
+/**
+ * Words are revealed exactly when the narrator says them (timings from forced
+ * alignment). Titles blur in word by word; subtitles show the full line dimly
+ * and light each word up as it is spoken.
+ */
+const SyncedWords: React.FC<{caption: Caption; style: React.CSSProperties}> = ({caption, style}) => {
   const frame = useCurrentFrame();
-  const out = interpolate(frame, [to - 14, to], [1, 0], clamp);
+  const isTitle = caption.style === 'title';
+  const lineIn = isTitle ? 1 : interpolate(frame, [caption.from - 6, caption.from + 2], [0, 1], clamp);
+  const lineOut = interpolate(frame, [caption.to - 10, caption.to], [1, 0], clamp);
   return (
-    <div style={{...style, opacity: out}}>
-      {text.split(' ').map((word, i) => {
-        const t = interpolate(frame, [from + i * stagger, from + i * stagger + 16], [0, 1], {
+    <div style={{...style, opacity: lineIn * lineOut}}>
+      {caption.words.map((w, i) => {
+        // start the reveal a hair early so the word is readable as it is heard
+        const t = interpolate(frame, [w.from - 3, w.from + (isTitle ? 9 : 4)], [0, 1], {
           ...clamp,
           easing: Easing.out(Easing.cubic),
         });
+        const speaking = interpolate(frame, [w.from - 2, w.from + 1, w.to, w.to + 6], [0, 1, 1, 0], clamp);
         return (
           <span
             key={i}
             style={{
               display: 'inline-block',
               marginRight: '0.28em',
-              opacity: t,
-              filter: `blur(${(1 - t) * 10}px)`,
-              transform: `translateY(${(1 - t) * 18}px)`,
+              opacity: isTitle ? t : 0.28 + 0.72 * t,
+              filter: isTitle ? `blur(${(1 - t) * 10}px)` : undefined,
+              transform: isTitle ? `translateY(${(1 - t) * 18}px)` : `translateY(${-speaking * 3}px)`,
+              color: isTitle ? 'white' : `rgb(${255 - speaking * 75}, ${255 - speaking * 10}, 255)`,
             }}
           >
-            {word}
+            {w.word}
           </span>
         );
       })}
@@ -80,48 +85,38 @@ export const Overlay: React.FC = () => {
         THE SCIENCE OF HABITS
       </div>
 
-      {CAPTIONS.map((c, i) =>
-        frame >= c.from - 1 && frame <= c.to + 1 ? (
-          c.kind === 'title' ? (
-            <RevealWords
-              key={i}
-              text={c.text}
-              from={c.from}
-              to={c.to}
-              stagger={4}
-              style={{
-                position: 'absolute',
-                top: 310,
-                left: 90,
-                right: 90,
-                textAlign: 'center',
-                fontSize: 76,
-                lineHeight: 1.15,
-                fontWeight: 300,
-                letterSpacing: '-0.01em',
-                textShadow: glow,
-              }}
-            />
-          ) : (
-            <RevealWords
-              key={i}
-              text={c.text}
-              from={c.from}
-              to={c.to}
-              stagger={3}
-              style={{
-                position: 'absolute',
-                bottom: 300,
-                left: 110,
-                right: 110,
-                textAlign: 'center',
-                fontSize: 50,
-                lineHeight: 1.3,
-                fontWeight: 400,
-                textShadow: glow,
-              }}
-            />
-          )
+      {CAPTIONS.map((c) =>
+        frame >= c.from - 8 && frame <= c.to + 1 ? (
+          <SyncedWords
+            key={c.key}
+            caption={c}
+            style={
+              c.style === 'title'
+                ? {
+                    position: 'absolute',
+                    top: 310,
+                    left: 90,
+                    right: 90,
+                    textAlign: 'center',
+                    fontSize: 76,
+                    lineHeight: 1.15,
+                    fontWeight: 300,
+                    letterSpacing: '-0.01em',
+                    textShadow: glow,
+                  }
+                : {
+                    position: 'absolute',
+                    bottom: 300,
+                    left: 70,
+                    right: 70,
+                    textAlign: 'center',
+                    fontSize: 50,
+                    lineHeight: 1.3,
+                    fontWeight: 500,
+                    textShadow: glow,
+                  }
+            }
+          />
         ) : null,
       )}
 
