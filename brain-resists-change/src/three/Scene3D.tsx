@@ -80,8 +80,9 @@ export const Scene3D: React.FC = () => {
   // Brain slowly turns: a graceful reveal in scene 1, then a gentle drift.
   const rotY =
     interpolate(frame, [0, SCENES.intro.to + 20], [-1.15, -0.2], {...clamp, easing: ease}) + time * 0.012;
-  const rotation = useMemo(() => new THREE.Euler(), []);
-  rotation.set(0.05, rotY, 0);
+  // A fresh Euler each frame: R3F skips props whose identity is unchanged,
+  // so a mutated object would freeze the brain at its first rendered angle.
+  const rotation = useMemo(() => new THREE.Euler(0.05, rotY, 0), [rotY]);
 
   useLayoutEffect(() => {
     const t = interpolate(frame, [0, DURATION_IN_FRAMES - 1], [0, 1], clamp);
