@@ -1,0 +1,392 @@
+{
+  "s1": {
+    "text": "What happens when we send electrons, one at a time, toward two tiny openings?",
+    "file": "voiceover/s1.wav",
+    "duration": 4.757,
+    "words": [
+      {
+        "word": "What",
+        "start": 0.0,
+        "end": 0.16
+      },
+      {
+        "word": "happens",
+        "start": 0.16,
+        "end": 0.62
+      },
+      {
+        "word": "when",
+        "start": 0.62,
+        "end": 0.71
+      },
+      {
+        "word": "we",
+        "start": 0.71,
+        "end": 0.81
+      },
+      {
+        "word": "send",
+        "start": 0.81,
+        "end": 1.03
+      },
+      {
+        "word": "electrons,",
+        "start": 1.03,
+        "end": 1.79
+      },
+      {
+        "word": "one",
+        "start": 2.11,
+        "end": 2.3
+      },
+      {
+        "word": "at",
+        "start": 2.3,
+        "end": 2.41
+      },
+      {
+        "word": "a",
+        "start": 2.41,
+        "end": 2.47
+      },
+      {
+        "word": "time,",
+        "start": 2.47,
+        "end": 2.9
+      },
+      {
+        "word": "toward",
+        "start": 3.11,
+        "end": 3.45
+      },
+      {
+        "word": "two",
+        "start": 3.45,
+        "end": 3.68
+      },
+      {
+        "word": "tiny",
+        "start": 3.68,
+        "end": 4.09
+      },
+      {
+        "word": "openings?",
+        "start": 4.09,
+        "end": 4.76
+      }
+    ]
+  },
+  "s2": {
+    "text": "Each electron arrives as a single spot. But something surprising happens as the spots build up.",
+    "file": "voiceover/s2.wav",
+    "duration": 5.952,
+    "words": [
+      {
+        "word": "Each",
+        "start": 0.0,
+        "end": 0.25
+      },
+      {
+        "word": "electron",
+        "start": 0.25,
+        "end": 0.89
+      },
+      {
+        "word": "arrives",
+        "start": 0.89,
+        "end": 1.44
+      },
+      {
+        "word": "as",
+        "start": 1.44,
+        "end": 1.57
+      },
+      {
+        "word": "a",
+        "start": 1.57,
+        "end": 1.6
+      },
+      {
+        "word": "single",
+        "start": 1.6,
+        "end": 1.97
+      },
+      {
+        "word": "spot.",
+        "start": 1.97,
+        "end": 2.48
+      },
+      {
+        "word": "But",
+        "start": 2.91,
+        "end": 3.05
+      },
+      {
+        "word": "something",
+        "start": 3.05,
+        "end": 3.4
+      },
+      {
+        "word": "surprising",
+        "start": 3.4,
+        "end": 4.0
+      },
+      {
+        "word": "happens",
+        "start": 4.0,
+        "end": 4.58
+      },
+      {
+        "word": "as",
+        "start": 4.68,
+        "end": 4.86
+      },
+      {
+        "word": "the",
+        "start": 4.86,
+        "end": 4.93
+      },
+      {
+        "word": "spots",
+        "start": 4.93,
+        "end": 5.36
+      },
+      {
+        "word": "build",
+        "start": 5.36,
+        "end": 5.61
+      },
+      {
+        "word": "up.",
+        "start": 5.61,
+        "end": 5.95
+      }
+    ]
+  },
+  "s3": {
+    "text": "Together, they form an interference pattern, revealing the wave-like behavior of quantum particles.",
+    "file": "voiceover/s3.wav",
+    "duration": 5.76,
+    "words": [
+      {
+        "word": "Together,",
+        "start": 0.0,
+        "end": 0.51
+      },
+      {
+        "word": "they",
+        "start": 0.51,
+        "end": 0.81
+      },
+      {
+        "word": "form",
+        "start": 0.81,
+        "end": 1.18
+      },
+      {
+        "word": "an",
+        "start": 1.18,
+        "end": 1.28
+      },
+      {
+        "word": "interference",
+        "start": 1.28,
+        "end": 1.88
+      },
+      {
+        "word": "pattern,",
+        "start": 1.88,
+        "end": 2.38
+      },
+      {
+        "word": "revealing",
+        "start": 2.74,
+        "end": 3.25
+      },
+      {
+        "word": "the",
+        "start": 3.25,
+        "end": 3.33
+      },
+      {
+        "word": "wave-like",
+        "start": 3.33,
+        "end": 4.03
+      },
+      {
+        "word": "behavior",
+        "start": 4.03,
+        "end": 4.58
+      },
+      {
+        "word": "of",
+        "start": 4.58,
+        "end": 4.68
+      },
+      {
+        "word": "quantum",
+        "start": 4.68,
+        "end": 5.07
+      },
+      {
+        "word": "particles.",
+        "start": 5.07,
+        "end": 5.76
+      }
+    ]
+  },
+  "s4": {
+    "text": "When the experiment reveals which slit an electron takes, that interference disappears.",
+    "file": "voiceover/s4.wav",
+    "duration": 4.992,
+    "words": [
+      {
+        "word": "When",
+        "start": 0.0,
+        "end": 0.13
+      },
+      {
+        "word": "the",
+        "start": 0.13,
+        "end": 0.24
+      },
+      {
+        "word": "experiment",
+        "start": 0.24,
+        "end": 0.88
+      },
+      {
+        "word": "reveals",
+        "start": 0.88,
+        "end": 1.38
+      },
+      {
+        "word": "which",
+        "start": 1.38,
+        "end": 1.58
+      },
+      {
+        "word": "slit",
+        "start": 1.58,
+        "end": 1.94
+      },
+      {
+        "word": "an",
+        "start": 1.94,
+        "end": 2.01
+      },
+      {
+        "word": "electron",
+        "start": 2.01,
+        "end": 2.56
+      },
+      {
+        "word": "takes,",
+        "start": 2.56,
+        "end": 3.04
+      },
+      {
+        "word": "that",
+        "start": 3.04,
+        "end": 3.56
+      },
+      {
+        "word": "interference",
+        "start": 3.56,
+        "end": 4.22
+      },
+      {
+        "word": "disappears.",
+        "start": 4.22,
+        "end": 4.99
+      }
+    ]
+  },
+  "s5": {
+    "text": "Not because a human mind controls reality, but because quantum behavior is different from everyday experience.",
+    "file": "voiceover/s5.wav",
+    "duration": 6.635,
+    "words": [
+      {
+        "word": "Not",
+        "start": 0.0,
+        "end": 0.3
+      },
+      {
+        "word": "because",
+        "start": 0.3,
+        "end": 0.6
+      },
+      {
+        "word": "a",
+        "start": 0.6,
+        "end": 0.64
+      },
+      {
+        "word": "human",
+        "start": 0.64,
+        "end": 1.03
+      },
+      {
+        "word": "mind",
+        "start": 1.03,
+        "end": 1.39
+      },
+      {
+        "word": "controls",
+        "start": 1.39,
+        "end": 1.91
+      },
+      {
+        "word": "reality,",
+        "start": 1.91,
+        "end": 2.52
+      },
+      {
+        "word": "but",
+        "start": 2.91,
+        "end": 3.03
+      },
+      {
+        "word": "because",
+        "start": 3.03,
+        "end": 3.31
+      },
+      {
+        "word": "quantum",
+        "start": 3.31,
+        "end": 3.8
+      },
+      {
+        "word": "behavior",
+        "start": 3.8,
+        "end": 4.38
+      },
+      {
+        "word": "is",
+        "start": 4.38,
+        "end": 4.61
+      },
+      {
+        "word": "different",
+        "start": 4.61,
+        "end": 5.02
+      },
+      {
+        "word": "from",
+        "start": 5.02,
+        "end": 5.21
+      },
+      {
+        "word": "everyday",
+        "start": 5.32,
+        "end": 5.79
+      },
+      {
+        "word": "experience.",
+        "start": 5.79,
+        "end": 6.63
+      }
+    ]
+  }
+}
