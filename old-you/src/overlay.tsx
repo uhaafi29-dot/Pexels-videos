@@ -5,9 +5,11 @@ import {CAPTION_CHUNKS, DURATION_IN_FRAMES, FPS, lineAt, lineEnd, wordAt} from '
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const SANS = "'Inter', 'Helvetica Neue', Arial, sans-serif";
 const SERIF = "'Cormorant Garamond', 'Times New Roman', serif";
-// Instagram Reels safe area: keep text below ~230 px and above the bottom ~500 px.
+// Instagram Reels safe area: keep text below ~230 px and above the bottom ~480 px.
 const SAFE_TOP = 250;
-const SUB_BOTTOM = 500;
+// Captions hang from a fixed line just under the stage floor (FLOOR_SCREEN =
+// 1185 in film.tsx), so they never jump around and never cover the figure.
+const SUB_TOP = 1228;
 
 const fadeIn = (f: number, a: number, b: number, r = 12) => interpolate(f, [a, a + r, b - r, b], [0, 1, 1, 0], clamp);
 const s = (sec: number) => Math.round(sec * FPS);
@@ -19,20 +21,21 @@ const Captions: React.FC = () => {
   const enter = interpolate(f, [chunk.from, chunk.from + 6], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
   const exit = interpolate(f, [chunk.to - 4, chunk.to], [1, 0], clamp);
   return (
-    <div style={{position: 'absolute', left: 90, right: 90, bottom: SUB_BOTTOM, display: 'flex', justifyContent: 'center', opacity: enter * exit, transform: `translateY(${(1 - enter) * 10}px)`}}>
+    <div style={{position: 'absolute', left: 80, right: 80, top: SUB_TOP, display: 'flex', justifyContent: 'center', opacity: enter * exit, transform: `translateY(${(1 - enter) * 8}px)`}}>
       <div
         style={{
-          background: 'rgba(5,8,15,0.66)',
-          borderRadius: 20,
-          padding: '14px 26px 18px',
+          background: 'rgba(4,7,13,0.8)',
+          border: '1px solid rgba(239,230,214,0.08)',
+          borderRadius: 22,
+          padding: '16px 30px 20px',
           textAlign: 'center',
           fontFamily: SANS,
-          fontSize: 54,
-          lineHeight: 1.16,
-          fontWeight: 600,
-          letterSpacing: '-0.01em',
+          fontSize: 62,
+          lineHeight: 1.14,
+          fontWeight: 700,
+          letterSpacing: '-0.015em',
           color: C.ivory,
-          maxWidth: 900,
+          maxWidth: 920,
         }}
       >
         {chunk.words.map((w, i) => {
@@ -40,7 +43,7 @@ const Captions: React.FC = () => {
           const end = Math.max(w.to, w.from + 2);
           const now = interpolate(f, [w.from - 2, w.from + 1, end, end + 5], [0, 1, 1, 0], clamp);
           return (
-            <span key={i} style={{display: 'inline-block', marginRight: i < chunk.words.length - 1 ? '0.25em' : 0, opacity: 0.5 + 0.5 * spoken, color: now > 0.5 ? C.gold : C.ivory}}>
+            <span key={i} style={{display: 'inline-block', marginRight: i < chunk.words.length - 1 ? '0.24em' : 0, opacity: 0.62 + 0.38 * spoken, color: now > 0.5 ? C.gold : C.ivory}}>
               {w.word}
             </span>
           );
@@ -51,7 +54,7 @@ const Captions: React.FC = () => {
 };
 
 const Small: React.FC<{o: number; children: React.ReactNode}> = ({o, children}) => (
-  <div style={{position: 'absolute', top: SAFE_TOP, left: 80, right: 80, textAlign: 'center', fontFamily: SANS, fontSize: 25, fontWeight: 500, letterSpacing: '0.06em', lineHeight: 1.5, color: 'rgba(239,230,214,0.82)', opacity: o}}>
+  <div style={{position: 'absolute', top: SAFE_TOP, left: 80, right: 80, textAlign: 'center', fontFamily: SANS, fontSize: 33, fontWeight: 500, letterSpacing: '0.02em', lineHeight: 1.4, color: 'rgba(239,230,214,0.9)', opacity: o}}>
     {children}
   </div>
 );
@@ -74,11 +77,11 @@ export const Overlay: React.FC = () => {
       <Captions />
       {note > 0 ? (
         <Small o={note}>
-          <span style={{color: C.gold, letterSpacing: '0.3em', fontWeight: 600, fontSize: 22}}>RESEARCH</span>
+          <span style={{color: C.gold, letterSpacing: '0.3em', fontWeight: 600, fontSize: 26}}>RESEARCH</span>
           <br />
           Wood, Tam &amp; Witt (2005), Journal of Personality and Social Psychology
           <br />
-          <span style={{fontSize: 21, opacity: 0.75}}>The outlines are a visual metaphor for cue-driven habits</span>
+          <span style={{fontSize: 27, opacity: 0.75}}>The outlines are a visual metaphor for cue-driven habits</span>
         </Small>
       ) : null}
       {term > 0 ? (

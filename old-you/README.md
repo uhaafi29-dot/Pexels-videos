@@ -3,7 +3,38 @@
 *Why you keep returning to your old habits.* A 48.9-second vertical
 (1080×1920, 30 fps) narrated reel for **The Psychology of Becoming**, in the
 page's minimalist 2D style (Remotion + SVG). The final video is
-`renders/old-you.mp4`, and the caption is in `INSTAGRAM_CAPTION.md`.
+`renders/old-you-v2.mp4` (`renders/old-you.mp4` is the first cut), and the
+caption is in `INSTAGRAM_CAPTION.md`.
+
+## v2 refinement pass
+
+- **Opening:** by 2.2 s the camera glides from the figure in the sun into the
+  dark room, where the old-self outline draws itself in brightly, phone
+  glowing, inside its own cold pool of light. At about 4.7 s it pulls back so
+  both selves share the frame.
+- **Composition:**
+  - every beat is framed closely, so the figure is about 40–60% larger
+  - the floor line sits at the same screen height in every shot (1185 px)
+  - the camera glides between framings rather than cutting
+- **Revelation:** the strongest transformation in the reel.
+  - The home flies apart piece by piece and the old outlines fall away.
+  - A spotlight isolates the one outline that travels with the phone
+    ("except where parts of the old setting stayed the same").
+  - Gold light floods in from the new window, and the travelling outline
+    loses some of its strength.
+- **Captions:**
+  - larger (62 px, bold) on a darker plate
+  - hung from a fixed line just under the stage, so they never move and
+    never cover the figure
+  - checked at phone size (about 390 pt wide)
+- **Ending:**
+  - with the phone charging outside (its faint outline still beside it),
+    a gold book appears where the phone was
+  - a faint gold outline appears in the bed as an invitation, in the same
+    place the old self waited
+  - the figure sits down into it
+  - the gold outline stays open near the head: a routine begun, not
+    finished
 
 ## Story and metaphor
 

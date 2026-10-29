@@ -178,7 +178,7 @@ export const Figure: React.FC<FigureProps> = ({x, y, pose, dir = 1, opacity = 1,
  * is turned into an edge by the contour filter, then broken into short dashes
  * by a striped mask. `gap` (0..1) widens the breaks so it can crumble away.
  */
-export const Outline: React.FC<FigureProps & {id: string; color?: 'ivory' | 'gold' | 'teal'; gap?: number; fill?: number; drift?: number; reveal?: number}> = ({
+export const Outline: React.FC<FigureProps & {id: string; color?: 'ivory' | 'gold' | 'teal'; gap?: number; fill?: number; drift?: number; reveal?: number; halo?: boolean}> = ({
   id,
   x,
   y,
@@ -191,6 +191,7 @@ export const Outline: React.FC<FigureProps & {id: string; color?: 'ivory' | 'gol
   drift = 0,
   reveal = 1,
   held = null,
+  halo = false,
 }) => {
   if (opacity <= 0.001) return null;
   const stripe = 9;
@@ -217,7 +218,7 @@ export const Outline: React.FC<FigureProps & {id: string; color?: 'ivory' | 'gol
         ) : null}
         <g opacity={opacity * (1 - fill)}>
           <g mask={`url(#m-${id})`}>
-            <g filter={`url(#contour-${color})`}>
+            <g filter={halo ? `url(#halo-${color})` : `url(#contour-${color})`}>
               <FigureShapes pose={pose} separate={false} />
             </g>
           </g>
@@ -246,6 +247,16 @@ export const FigureDefs: React.FC = () => (
       <filter key={c} id={`contour-${c}`} x="-20%" y="-20%" width="140%" height="140%">
         <feMorphology in="SourceAlpha" operator="erode" radius="2.4" result="inner" />
         <feComposite in="SourceAlpha" in2="inner" operator="out" result="ring" />
+        <feFlood floodColor={C[c]} />
+        <feComposite in2="ring" operator="in" />
+      </filter>
+    ))}
+    {/* outer halo contour: drawn just outside the silhouette, for an outline around a solid figure */}
+    {(['gold'] as const).map((c) => (
+      <filter key={c} id={`halo-${c}`} x="-20%" y="-20%" width="140%" height="140%">
+        <feMorphology in="SourceAlpha" operator="dilate" radius="8" result="outer" />
+        <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="inner" />
+        <feComposite in="outer" in2="inner" operator="out" result="ring" />
         <feFlood floodColor={C[c]} />
         <feComposite in2="ring" operator="in" />
       </filter>

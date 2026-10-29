@@ -3,7 +3,7 @@
 import {lineAt, wordAt} from './timeline';
 
 export const A = {
-  reveal: 2.0, // the waiting outline appears
+  reveal: 1.6, // the waiting outline appears
   home: wordAt('hook', 15), // "Then you get home"
   waiting: wordAt('hook', 20), // "the old you is waiting"
   tryHarder: lineAt('rising'),
