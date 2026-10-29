@@ -27,7 +27,8 @@ neuroscience and personal transformation. These rules apply to **every** reel.
 5. **Practical value:** one specific action, mental exercise or perspective
    shift. Never vague advice like "just change your mindset".
 6. **Follow-worthy ending:** connect to one of the recurring content series
-   with a natural, concise, non-salesy CTA.
+   with a natural, concise, non-salesy CTA. Known series: **The Psychology
+   of Becoming**.
 7. **Retention:** cut filler, repetition and unnecessary explanation. Every
    sentence must create curiosity, deepen understanding or deliver value.
 8. **Visual storytelling:** premium minimalist 2D animation with one evolving
