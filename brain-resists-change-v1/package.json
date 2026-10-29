@@ -1,0 +1,31 @@
+{
+  "name": "brain-resists-change",
+  "version": "1.0.0",
+  "description": "20s vertical cinematic 3D explainer: Why Your Brain Resists Change (Remotion + Three.js)",
+  "scripts": {
+    "studio": "remotion studio",
+    "audio": "node --experimental-strip-types scripts/generate-ambient.mts",
+    "render": "remotion render BrainResistsChange out/brain-resists-change.mp4",
+    "render:cpu": "remotion render BrainResistsChange out/brain-resists-change.mp4 --gl=swangle",
+    "still": "remotion still BrainResistsChange out/still.png --frame=300",
+    "typecheck": "tsc",
+    "captions": "node --experimental-strip-types scripts/export-captions.mts",
+    "voiceover": "python3 scripts/generate_voiceover.py --model tts/kokoro-q8.onnx --voices tts/voices"
+  },
+  "dependencies": {
+    "@fontsource/inter": "5.1.0",
+    "@react-three/fiber": "8.18.0",
+    "@remotion/cli": "4.0.539",
+    "@remotion/three": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539",
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/three": "0.170.0",
+    "typescript": "5.6.3"
+  },
+  "private": true
+}

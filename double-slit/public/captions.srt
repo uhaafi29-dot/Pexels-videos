@@ -1,0 +1,19 @@
+1
+00:00:00,400 --> 00:00:05,400
+What happens when we send electrons, one at a time, toward two tiny openings?
+
+2
+00:00:05,750 --> 00:00:12,000
+Each electron arrives as a single spot. But something surprising happens as the spots build up.
+
+3
+00:00:12,900 --> 00:00:19,300
+Together, they form an interference pattern, revealing the wave-like behavior of quantum particles.
+
+4
+00:00:21,900 --> 00:00:27,500
+When the experiment reveals which slit an electron takes, that interference disappears.
+
+5
+00:00:29,300 --> 00:00:36,600
+Not because a human mind controls reality, but because quantum behavior is different from everyday experience.
