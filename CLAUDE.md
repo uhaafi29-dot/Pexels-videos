@@ -38,6 +38,32 @@ neuroscience and personal transformation. These rules apply to **every** reel.
 10. **Final review:** does the viewer have a compelling reason to watch, save,
     share and follow?
 
+## Storytelling and retention rules
+
+Tell a story; don't just present information. Use this structure when it
+fits, and vary it for science demonstrations, practical exercises and
+research-based stories:
+
+1. **Hook:** a relatable contradiction, mystery or specific problem.
+2. **Rising action:** how the problem develops and why it matters.
+3. **Second conflict:** a genuine, unexpected complication, misconception or
+   contradiction.
+4. **Climax:** reveal the psychological mechanism or discovery that explains
+   it, at a satisfying moment rather than after a long introduction.
+5. **Resolution:** a clear, useful takeaway that resolves the opening mystery.
+
+- Make the viewer feel personally connected to the problem.
+- Sustain curiosity, but never withhold essential information artificially.
+- Never invent personal stories, experiments, findings or transformations.
+  Relatable "you" scenarios are fine; fabricated anecdotes are not.
+- Keep the narration natural and conversational, never melodramatic.
+- Use one evolving 2D metaphor for the whole story. The climax should be a
+  meaningful transformation, not a pile of effects.
+- End on a useful insight, action or perspective shift. Add a short CTA only
+  when it feels natural.
+- **Script gate format:** label the hook, rising action, second conflict,
+  climax and resolution in the script, then wait for approval.
+
 ## Signature visual style: minimalist 2D (NOT 3D)
 
 - **Mix (a guideline, not a quota):**
